@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  my_service:
+    build:
+      context: .
+    volumes:
+      - ./orderbook.db:/usr/src/app/orderbook.db
+    depends_on:
+      - db
+
+  db:
+    image: "sqlite:latest"
+    volumes:
+      - ./orderbook.db:/usr/src/app/orderbook.db
