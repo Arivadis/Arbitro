@@ -60,14 +60,14 @@ async def main():
     configs = {
         'Binance spot': {
             'id': 'binance',
-            'symbols': ['STMX/USDT', 'ANKR/USDT'],
+            'symbols': ['STMX/USDT'],
             'options': {
                 'defaultType': 'spot',
             },
         },
         'Binance futures': {
             'id': 'binance',
-            'symbols': ['STMX/USDT', 'ANKR/USDT'],
+            'symbols': ['STMX/USDT'],
             'options': {
                 'defaultType': 'future',
             },
